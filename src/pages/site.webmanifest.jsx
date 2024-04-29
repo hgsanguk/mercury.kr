@@ -9,8 +9,8 @@ export async function getServerSideProps({ res }) {
   const theme = settings.theme || "dark";
 
   const manifest = {
-    name: settings.title || "Homepage",
-    short_name: settings.title || "Homepage",
+    name: settings.title || "수은월드",
+    short_name: settings.title || "수은월드",
     icons: [
       {
         src: "/android-chrome-192x192.png?v=2",

@@ -372,7 +372,7 @@ function Home({ initialSettings }) {
   return (
     <>
       <Head>
-        <title>{settings.title || "Homepage"}</title>
+        <title>{settings.title || "수은월드"}</title>
         {settings.base && <base href={settings.base} />}
         {settings.favicon ? (
           <>
