@@ -1,14 +1,9 @@
 import genericProxyHandler from "utils/proxy/handlers/generic";
 
 const widget = {
-  api: "{url}/{endpoint}",
+  api: "{url}/?stats=true",
   proxyHandler: genericProxyHandler,
-
-  mappings: {
-    upstreams: {
-      endpoint: "reverse_proxy/upstreams",
-    },
-  },
+  allowedEndpoints: /overview/,
 };
 
 export default widget;
